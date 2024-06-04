@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+vendor_price_list.access_product_template_vendor_line,access_product_template_vendor_line,vendor_price_list.model_product_template_vendor_line,,1,1,1,1
