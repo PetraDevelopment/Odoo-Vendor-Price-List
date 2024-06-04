@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record model="ir.ui.view" id="res_partner_view_vendor_price_list_inherit">
+    <field name="name">res.partner.view.vendor.price.list.inherit</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+   
+           
+
+            <xpath expr="//page[@name='internal_notes']" position="after">
+                <page name="product_price_list_custom" string="Product" >
+                 
+                       <field name="product_line_ids_purchase" >
+                    <tree string="Product Lines" editable="bottom">
+                        <field name="product_of_partner_name"/>
+                        <field name="price"/>
+                        <!-- <field name="last_purchase_date"/> -->
+                        <field name="last_purchase_date_with_update_price"/>
+                     
+                    </tree>
+                </field>
+             
+                </page>
+                
+            </xpath>
+      
+
+
+        </field>
+    </record>
+
+    </odoo>
+    <!-- invoicing
+    
+    Accounting -->
